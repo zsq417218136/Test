@@ -1,0 +1,14 @@
+package rules;
+dialect "java"
+
+import java.util.*;
+import com.example.demo.service.*;
+
+global ESLogService eslogservice;
+
+rule "01"
+when
+    $d:Double($d==0)
+then
+    System.out.println("1111111"+$d);
+end

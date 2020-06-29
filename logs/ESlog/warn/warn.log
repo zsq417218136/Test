@@ -1,0 +1,210 @@
+2020-06-17 10:36:26.144 ERROR [ESlog] [main] [org.apache.catalina.core.ContainerBase:175] [] [ ] - A child container failed during start
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [NonLoginAuthenticator[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_212]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_212]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[?:1.8.0_212]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[?:1.8.0_212]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[?:1.8.0_212]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:468) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:437) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:191) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:178) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:158) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10) ~[classes/:?]
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [NonLoginAuthenticator[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]]
+	at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:440) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:198) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardPipeline.startInternal(StandardPipeline.java:176) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5056) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[?:1.8.0_212]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[?:1.8.0_212]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[?:1.8.0_212]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	... 31 more
+Caused by: java.lang.NoSuchMethodError: javax.servlet.ServletContext.getVirtualServerName()Ljava/lang/String;
+	at org.apache.catalina.authenticator.AuthenticatorBase.startInternal(AuthenticatorBase.java:1321) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardPipeline.startInternal(StandardPipeline.java:176) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5056) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[?:1.8.0_212]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[?:1.8.0_212]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[?:1.8.0_212]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	... 31 more
+2020-06-17 10:36:26.144 ERROR [ESlog] [main] [org.apache.catalina.core.ContainerBase:175] [] [ ] - A child container failed during start
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: A child container failed during start
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_212]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_212]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:468) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:437) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:191) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:178) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:158) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10) ~[classes/:?]
+Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:928) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[?:1.8.0_212]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[?:1.8.0_212]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[?:1.8.0_212]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	... 22 more
+Caused by: java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [NonLoginAuthenticator[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_212]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_212]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[?:1.8.0_212]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[?:1.8.0_212]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[?:1.8.0_212]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	... 22 more
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [NonLoginAuthenticator[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]]
+	at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:440) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:198) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardPipeline.startInternal(StandardPipeline.java:176) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5056) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[?:1.8.0_212]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[?:1.8.0_212]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[?:1.8.0_212]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[?:1.8.0_212]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[?:1.8.0_212]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[?:1.8.0_212]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	... 22 more
+Caused by: java.lang.NoSuchMethodError: javax.servlet.ServletContext.getVirtualServerName()Ljava/lang/String;
+	at org.apache.catalina.authenticator.AuthenticatorBase.startInternal(AuthenticatorBase.java:1321) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardPipeline.startInternal(StandardPipeline.java:176) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5056) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[?:1.8.0_212]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[?:1.8.0_212]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[?:1.8.0_212]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[?:1.8.0_212]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[?:1.8.0_212]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[?:1.8.0_212]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	... 22 more
+2020-06-17 10:36:26.151 WARN  [ESlog] [main] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:558] [] [ ] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2020-06-17 10:36:26.166 ERROR [ESlog] [main] [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:40] [] [ ] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.apache.catalina.authenticator.AuthenticatorBase.startInternal(AuthenticatorBase.java:1321)
+
+The following method did not exist:
+
+    javax.servlet.ServletContext.getVirtualServerName()Ljava/lang/String;
+
+The method's class, javax.servlet.ServletContext, is available from the following locations:
+
+    jar:file:/C:/Users/41721/Desktop/ELK/demo/lib/javax.servlet.jar!/javax/servlet/ServletContext.class
+    jar:file:/I:/%e5%b7%a5%e4%bd%9c%e7%9b%b8%e5%85%b3%e6%96%87%e4%bb%b6/work_tools/work_maven/org/apache/tomcat/embed/tomcat-embed-core/9.0.36/tomcat-embed-core-9.0.36.jar!/javax/servlet/ServletContext.class
+
+The class hierarchy was loaded from the following locations:
+
+    javax.servlet.ServletContext: file:/C:/Users/41721/Desktop/ELK/demo/lib/javax.servlet.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of javax.servlet.ServletContext
+
+2020-06-29 11:07:29.748 ERROR [ESlog] [main] [com.drools.core.KieTemplate:27] [] [ ] - Please set base path(spring.drools.path = xxx).
+2020-06-29 11:24:12.534 ERROR [ESlog] [main] [com.drools.core.KieTemplate:27] [] [ ] - Please set base path(spring.drools.path = xxx).
+2020-06-29 11:25:09.197 ERROR [ESlog] [main] [com.drools.core.KieTemplate:27] [] [ ] - Please set base path(spring.drools.path = xxx).
+2020-06-29 11:26:34.896 ERROR [ESlog] [main] [com.drools.core.KieTemplate:27] [] [ ] - Please set base path(spring.drools.path = xxx).
+2020-06-29 11:30:23.471 WARN  [ESlog] [main] [org.drools.compiler.kie.builder.impl.KieBuilderImpl:390] [] [ ] - File 'src/main/resources/file0.drl' is in folder 'src/main/resources' but declares package 'rules'. It is advised to have a correspondance between package and folder names.
+2020-06-29 11:30:23.887 WARN  [ESlog] [main] [org.drools.compiler.kie.builder.impl.KieBuilderImpl:390] [] [ ] - File 'file0.drl' is in folder '' but declares package 'rules'. It is advised to have a correspondance between package and folder names.
+2020-06-29 11:30:24.889 WARN  [ESlog] [main] [org.drools.compiler.kie.builder.impl.KieBuilderImpl:390] [] [ ] - File 'src/main/resources/file0.drl' is in folder 'src/main/resources' but declares package 'rules'. It is advised to have a correspondance between package and folder names.
+2020-06-29 11:30:24.890 WARN  [ESlog] [main] [org.drools.compiler.kie.builder.impl.KieBuilderImpl:390] [] [ ] - File 'file0.drl' is in folder '' but declares package 'rules'. It is advised to have a correspondance between package and folder names.
+2020-06-29 11:30:50.330 WARN  [ESlog] [main] [org.drools.compiler.kie.builder.impl.KieBuilderImpl:390] [] [ ] - File 'src/main/resources/file0.drl' is in folder 'src/main/resources' but declares package 'rules'. It is advised to have a correspondance between package and folder names.
+2020-06-29 11:30:50.507 WARN  [ESlog] [main] [org.drools.compiler.kie.builder.impl.KieBuilderImpl:390] [] [ ] - File 'file0.drl' is in folder '' but declares package 'rules'. It is advised to have a correspondance between package and folder names.
+2020-06-29 11:30:51.302 WARN  [ESlog] [main] [org.drools.compiler.kie.builder.impl.KieBuilderImpl:390] [] [ ] - File 'src/main/resources/file0.drl' is in folder 'src/main/resources' but declares package 'rules'. It is advised to have a correspondance between package and folder names.
+2020-06-29 11:30:51.304 WARN  [ESlog] [main] [org.drools.compiler.kie.builder.impl.KieBuilderImpl:390] [] [ ] - File 'file0.drl' is in folder '' but declares package 'rules'. It is advised to have a correspondance between package and folder names.

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="info" monitorInterval="1800">
+
+    <Properties>
+        <!-- 模块名 -->
+        <property name="moduleName">ESlog</property>
+        <!-- 日志内容格式化 -->
+        <property name="format">%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [${moduleName}] [%t] [%logger{50}:%L] [%X{uniqueId}] [%X{traceId} %X{spanId}] - %msg%n
+        </property>
+        <!-- 单个日志文件大小限制 -->
+        <property name="fileLimit">50MB</property>
+        <!-- 历史日志保留时长 -->
+        <property name="fileHistoryLimit">624H</property>
+    </Properties>
+
+    <appenders>
+        <!-- 控制台的配置 -->
+        <Console name="STDOUT">
+            <!-- 控制台只输出level及以上级别的信息 -->
+            <ThresholdFilter level="debug" onMatch="ACCEPT" onMismatch="DENY"/>
+            <!-- 输出日志的格式-->
+            <PatternLayout pattern="${format}" charset="UTF-8"/>
+        </Console>
+        <!-- debug-->
+        <RollingRandomAccessFile name="FILE-DEBUG" fileName="logs/${moduleName}/debug/debug.log"
+                                 filePattern="logs/${moduleName}/debug/%d{yyyy-MM}/debug-%d{yyyy-MM-dd}-%i.log">
+            <ThresholdFilter level="debug" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${format}" charset="UTF-8"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="${fileLimit}"/>
+            </Policies>
+            <DefaultRolloverStrategy max="500">
+                <Delete basePath="logs" maxDepth="5">
+                    <IfFileName glob="${moduleName}/**/*debug*.log"/>
+                    <IfLastModified age="${fileHistoryLimit}"/>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingRandomAccessFile>
+        <!-- info - 基本存放所有日志信息，用来主要用来采集和查看 -->
+        <RollingRandomAccessFile name="FILE-INFO" fileName="logs/${moduleName}/${moduleName}.log"
+                                 filePattern="logs/${moduleName}/info/%d{yyyy-MM}/info-%d{yyyy-MM-dd-HH}-%i.log">
+            <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${format}" charset="UTF-8"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="${fileLimit}"/>
+            </Policies>
+            <DefaultRolloverStrategy max="500">
+                <Delete basePath="logs" maxDepth="5">
+                    <IfFileName glob="${moduleName}/**/*info*.log"/>
+                    <IfLastModified age="${fileHistoryLimit}"/>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingRandomAccessFile>
+        <!-- warn -->
+        <RollingRandomAccessFile name="FILE-WARN" fileName="logs/${moduleName}/warn/warn.log"
+                                 filePattern="logs/${moduleName}/warn/%d{yyyy-MM}/warn-%d{yyyy-MM-dd}-%i.log">
+            <ThresholdFilter level="warn" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${format}" charset="UTF-8"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="${fileLimit}"/>
+            </Policies>
+            <DefaultRolloverStrategy max="500">
+                <Delete basePath="logs" maxDepth="5">
+                    <IfFileName glob="${moduleName}/**/*warn*.log"/>
+                    <IfLastModified age="${fileHistoryLimit}"/>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingRandomAccessFile>
+        <!-- error -->
+        <RollingRandomAccessFile name="FILE-ERROR" fileName="logs/${moduleName}/error/error.log"
+                                 filePattern="logs/${moduleName}/error/%d{yyyy-MM}/error-%d{yyyy-MM-dd}-%i.log">
+            <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${format}" charset="UTF-8"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="${fileLimit}"/>
+            </Policies>
+            <DefaultRolloverStrategy max="500">
+                <Delete basePath="logs" maxDepth="5">
+                    <IfFileName glob="${moduleName}/**/*error*.log"/>
+                    <IfLastModified age="${fileHistoryLimit}"/>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingRandomAccessFile>
+    </appenders>
+
+    <loggers>
+        <!-- root -->
+        <AsyncRoot level="info" includeLocation="true">
+            <AppenderRef ref="FILE-INFO"/>
+            <AppenderRef ref="FILE-WARN"/>
+            <AppenderRef ref="FILE-ERROR"/>
+            <AppenderRef ref="STDOUT"/>
+        </AsyncRoot>
+        <!-- 关闭阿里云MQ的连接日志 -->
+        <AsyncLogger name="RocketmqClient" level="off" additivity="false">
+            <appender-ref ref="STDOUT"/>
+        </AsyncLogger>
+        <AsyncLogger name="RocketmqRemoting" level="off" additivity="false">
+            <appender-ref ref="STDOUT"/>
+        </AsyncLogger>
+        <AsyncLogger name="RocketmqCommon" level="off" additivity="false">
+            <appender-ref ref="STDOUT"/>
+        </AsyncLogger>
+        <!-- 自定义 - 只开启本项目的debug级别日志 -->
+        <AsyncLogger level="debug" name="cn.biosan.cloud" additivity="false">
+            <appender-ref ref="FILE-INFO"/>
+            <appender-ref ref="STDOUT"/>
+        </AsyncLogger>
+    </loggers>
+</configuration>

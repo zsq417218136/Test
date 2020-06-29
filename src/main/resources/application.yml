@@ -1,0 +1,8 @@
+server:
+  port: 8012
+
+spring:
+  drools:
+    path: C:\Users\41721\Desktop\ELK\demo\
+    mode: stream
+    update: 10

@@ -1,0 +1,394 @@
+2020-06-17 10:36:24.782 INFO  [ESlog] [main] [com.example.demo.DemoApplication:55] [] [ ] - Starting DemoApplication using Java 1.8.0_212 on LAPTOP-2FT0MG9F with PID 16548 (C:\Users\41721\Desktop\ELK\demo\target\classes started by 41721 in C:\Users\41721\Desktop\ELK\demo)
+2020-06-17 10:36:24.791 INFO  [ESlog] [main] [com.example.demo.DemoApplication:651] [] [ ] - No active profile set, falling back to default profiles: default
+2020-06-17 10:36:26.040 INFO  [ESlog] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] [] [ ] - Tomcat initialized with port(s): 8080 (http)
+2020-06-17 10:36:26.058 INFO  [ESlog] [main] [org.apache.coyote.http11.Http11NioProtocol:173] [] [ ] - Initializing ProtocolHandler ["http-nio-8080"]
+2020-06-17 10:36:26.058 INFO  [ESlog] [main] [org.apache.catalina.core.StandardService:173] [] [ ] - Starting service [Tomcat]
+2020-06-17 10:36:26.058 INFO  [ESlog] [main] [org.apache.catalina.core.StandardEngine:173] [] [ ] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-17 10:36:26.144 ERROR [ESlog] [main] [org.apache.catalina.core.ContainerBase:175] [] [ ] - A child container failed during start
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [NonLoginAuthenticator[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_212]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_212]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[?:1.8.0_212]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[?:1.8.0_212]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[?:1.8.0_212]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:468) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:437) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:191) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:178) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:158) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10) ~[classes/:?]
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [NonLoginAuthenticator[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]]
+	at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:440) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:198) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardPipeline.startInternal(StandardPipeline.java:176) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5056) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[?:1.8.0_212]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[?:1.8.0_212]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[?:1.8.0_212]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	... 31 more
+Caused by: java.lang.NoSuchMethodError: javax.servlet.ServletContext.getVirtualServerName()Ljava/lang/String;
+	at org.apache.catalina.authenticator.AuthenticatorBase.startInternal(AuthenticatorBase.java:1321) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardPipeline.startInternal(StandardPipeline.java:176) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5056) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[?:1.8.0_212]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[?:1.8.0_212]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[?:1.8.0_212]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	... 31 more
+2020-06-17 10:36:26.144 ERROR [ESlog] [main] [org.apache.catalina.core.ContainerBase:175] [] [ ] - A child container failed during start
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: A child container failed during start
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_212]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_212]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:468) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:437) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:191) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:178) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:158) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.4.0-20200616.125406-99.jar:2.4.0-SNAPSHOT]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10) ~[classes/:?]
+Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:928) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[?:1.8.0_212]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[?:1.8.0_212]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[?:1.8.0_212]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	... 22 more
+Caused by: java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [NonLoginAuthenticator[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_212]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_212]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[?:1.8.0_212]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[?:1.8.0_212]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[?:1.8.0_212]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	... 22 more
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [NonLoginAuthenticator[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]]
+	at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:440) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:198) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardPipeline.startInternal(StandardPipeline.java:176) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5056) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[?:1.8.0_212]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[?:1.8.0_212]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[?:1.8.0_212]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[?:1.8.0_212]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[?:1.8.0_212]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[?:1.8.0_212]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	... 22 more
+Caused by: java.lang.NoSuchMethodError: javax.servlet.ServletContext.getVirtualServerName()Ljava/lang/String;
+	at org.apache.catalina.authenticator.AuthenticatorBase.startInternal(AuthenticatorBase.java:1321) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardPipeline.startInternal(StandardPipeline.java:176) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5056) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[?:1.8.0_212]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[?:1.8.0_212]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[?:1.8.0_212]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[?:1.8.0_212]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[?:1.8.0_212]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[?:1.8.0_212]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.36.jar:9.0.36]
+	... 22 more
+2020-06-17 10:36:26.145 INFO  [ESlog] [main] [org.apache.coyote.http11.Http11NioProtocol:173] [] [ ] - Pausing ProtocolHandler ["http-nio-8080"]
+2020-06-17 10:36:26.145 INFO  [ESlog] [main] [org.apache.catalina.core.StandardService:173] [] [ ] - Stopping service [Tomcat]
+2020-06-17 10:36:26.146 INFO  [ESlog] [main] [org.apache.coyote.http11.Http11NioProtocol:173] [] [ ] - Destroying ProtocolHandler ["http-nio-8080"]
+2020-06-17 10:36:26.151 WARN  [ESlog] [main] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:558] [] [ ] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2020-06-17 10:36:26.159 INFO  [ESlog] [main] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:136] [] [ ] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-17 10:36:26.166 ERROR [ESlog] [main] [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:40] [] [ ] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.apache.catalina.authenticator.AuthenticatorBase.startInternal(AuthenticatorBase.java:1321)
+
+The following method did not exist:
+
+    javax.servlet.ServletContext.getVirtualServerName()Ljava/lang/String;
+
+The method's class, javax.servlet.ServletContext, is available from the following locations:
+
+    jar:file:/C:/Users/41721/Desktop/ELK/demo/lib/javax.servlet.jar!/javax/servlet/ServletContext.class
+    jar:file:/I:/%e5%b7%a5%e4%bd%9c%e7%9b%b8%e5%85%b3%e6%96%87%e4%bb%b6/work_tools/work_maven/org/apache/tomcat/embed/tomcat-embed-core/9.0.36/tomcat-embed-core-9.0.36.jar!/javax/servlet/ServletContext.class
+
+The class hierarchy was loaded from the following locations:
+
+    javax.servlet.ServletContext: file:/C:/Users/41721/Desktop/ELK/demo/lib/javax.servlet.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of javax.servlet.ServletContext
+
+2020-06-17 10:39:12.253 INFO  [ESlog] [main] [com.example.demo.DemoApplication:55] [] [ ] - Starting DemoApplication using Java 1.8.0_212 on LAPTOP-2FT0MG9F with PID 6916 (C:\Users\41721\Desktop\ELK\demo\target\classes started by 41721 in C:\Users\41721\Desktop\ELK\demo)
+2020-06-17 10:39:12.262 INFO  [ESlog] [main] [com.example.demo.DemoApplication:651] [] [ ] - No active profile set, falling back to default profiles: default
+2020-06-17 10:39:13.170 INFO  [ESlog] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] [] [ ] - Tomcat initialized with port(s): 8080 (http)
+2020-06-17 10:39:13.187 INFO  [ESlog] [main] [org.apache.coyote.http11.Http11NioProtocol:173] [] [ ] - Initializing ProtocolHandler ["http-nio-8080"]
+2020-06-17 10:39:13.188 INFO  [ESlog] [main] [org.apache.catalina.core.StandardService:173] [] [ ] - Starting service [Tomcat]
+2020-06-17 10:39:13.188 INFO  [ESlog] [main] [org.apache.catalina.core.StandardEngine:173] [] [ ] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-17 10:39:13.384 INFO  [ESlog] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] [] [ ] - Initializing Spring embedded WebApplicationContext
+2020-06-17 10:39:13.385 INFO  [ESlog] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] [] [ ] - Root WebApplicationContext: initialization completed in 1080 ms
+2020-06-17 10:39:13.730 INFO  [ESlog] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] [] [ ] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-17 10:39:13.976 INFO  [ESlog] [main] [org.apache.coyote.http11.Http11NioProtocol:173] [] [ ] - Starting ProtocolHandler ["http-nio-8080"]
+2020-06-17 10:39:14.017 INFO  [ESlog] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] [] [ ] - Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-17 10:39:14.025 INFO  [ESlog] [main] [com.example.demo.DemoApplication:61] [] [ ] - Started DemoApplication in 2.373 seconds (JVM running for 3.493)
+2020-06-17 10:40:12.952 INFO  [ESlog] [http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] [] [ ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-17 10:40:12.952 INFO  [ESlog] [http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet:525] [] [ ] - Initializing Servlet 'dispatcherServlet'
+2020-06-17 10:40:12.957 INFO  [ESlog] [http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet:547] [] [ ] - Completed initialization in 5 ms
+2020-06-17 10:40:13.061 INFO  [ESlog] [http-nio-8080-exec-1] [com.example.demo.filter.ParameterFilter:64] [1ed3e3012963] [ ] - Request : /commmon/testlog/123456 > Source IP : 0:0:0:0:0:0:0:1 > Parameters : {} 
+2020-06-17 10:40:13.166 INFO  [ESlog] [http-nio-8080-exec-2] [com.example.demo.filter.ParameterFilter:64] [04f34ea13166] [ ] - Request : /favicon.ico > Source IP : 0:0:0:0:0:0:0:1 > Parameters : {} 
+2020-06-17 10:41:33.942 INFO  [ESlog] [http-nio-8080-exec-5] [com.example.demo.filter.ParameterFilter:64] [0945c7e93942] [ ] - Request : /commmon/testlog/hdk > Source IP : 0:0:0:0:0:0:0:1 > Parameters : {} 
+2020-06-17 10:44:44.984 INFO  [ESlog] [http-nio-8080-exec-8] [com.example.demo.filter.ParameterFilter:64] [24a388a84983] [ ] - Request : /commmon/testlog > Source IP : 127.0.0.1 > Parameters : {} 
+2020-06-17 10:44:45.068 INFO  [ESlog] [http-nio-8080-exec-8] [com.example.demo.controller.ESLogController:27] [24a388a84983] [ ] - nullcontroller打印信息哈哈哈
+2020-06-17 10:44:45.068 INFO  [ESlog] [http-nio-8080-exec-8] [com.example.demo.service.impl.ESLogServiceImpl:14] [24a388a84983] [ ] - nullservice层打印日志!!!!!!!!
+2020-06-17 10:48:11.842 INFO  [ESlog] [http-nio-8080-exec-10] [com.example.demo.filter.ParameterFilter:64] [42d883191841] [ ] - Request : /commmon/testlog > Source IP : 127.0.0.1 > Parameters : {"equipment_code":"123312312"} 
+2020-06-17 10:48:11.842 INFO  [ESlog] [http-nio-8080-exec-10] [com.example.demo.controller.ESLogController:27] [42d883191841] [ ] - 123312312controller打印信息哈哈哈
+2020-06-17 10:48:11.842 INFO  [ESlog] [http-nio-8080-exec-10] [com.example.demo.service.impl.ESLogServiceImpl:14] [42d883191841] [ ] - 123312312service层打印日志!!!!!!!!
+2020-06-29 11:07:27.587 INFO  [ESlog] [main] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:308] [] [ ] - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.DemoApplicationTests], using SpringBootContextLoader
+2020-06-29 11:07:27.594 INFO  [ESlog] [main] [org.springframework.test.context.support.AbstractContextLoader:264] [] [ ] - Could not detect default resource locations for test class [com.example.demo.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-06-29 11:07:27.594 INFO  [ESlog] [main] [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils:83] [] [ ] - Could not detect default configuration classes for test class [com.example.demo.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-06-29 11:07:27.708 INFO  [ESlog] [main] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:237] [] [ ] - Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.DemoApplicationTests
+2020-06-29 11:07:27.809 INFO  [ESlog] [main] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:248] [] [ ] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-06-29 11:07:27.824 INFO  [ESlog] [main] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:177] [] [ ] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@146587a2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5f0e9815, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@76884e4b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@126945f9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2a898881, org.springframework.test.context.transaction.TransactionalTestExecutionListener@16c63f5, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@35229f85, org.springframework.test.context.event.EventPublishingTestExecutionListener@6d3c5255, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@b1712f3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6986bbaf, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4879dfad, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4758820d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@74eb909f, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@28ec166e]
+2020-06-29 11:07:28.210 INFO  [ESlog] [main] [com.example.demo.DemoApplicationTests:55] [] [ ] - Starting DemoApplicationTests using Java 1.8.0_212 on LAPTOP-2FT0MG9F with PID 17312 (started by 41721 in C:\Users\41721\Desktop\ELK\demo)
+2020-06-29 11:07:28.213 INFO  [ESlog] [main] [com.example.demo.DemoApplicationTests:651] [] [ ] - No active profile set, falling back to default profiles: default
+2020-06-29 11:07:29.408 INFO  [ESlog] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] [] [ ] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-29 11:07:29.748 ERROR [ESlog] [main] [com.drools.core.KieTemplate:27] [] [ ] - Please set base path(spring.drools.path = xxx).
+2020-06-29 11:07:29.834 INFO  [ESlog] [main] [com.example.demo.DemoApplicationTests:61] [] [ ] - Started DemoApplicationTests in 1.885 seconds (JVM running for 4.377)
+2020-06-29 11:07:30.060 INFO  [ESlog] [SpringContextShutdownHook] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:218] [] [ ] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-29 11:24:09.519 INFO  [ESlog] [main] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:308] [] [ ] - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.DemoApplicationTests], using SpringBootContextLoader
+2020-06-29 11:24:09.527 INFO  [ESlog] [main] [org.springframework.test.context.support.AbstractContextLoader:264] [] [ ] - Could not detect default resource locations for test class [com.example.demo.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-06-29 11:24:09.528 INFO  [ESlog] [main] [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils:83] [] [ ] - Could not detect default configuration classes for test class [com.example.demo.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-06-29 11:24:09.769 INFO  [ESlog] [main] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:237] [] [ ] - Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.DemoApplicationTests
+2020-06-29 11:24:09.893 INFO  [ESlog] [main] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:248] [] [ ] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-06-29 11:24:09.908 INFO  [ESlog] [main] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:177] [] [ ] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6bff19ff, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@41e1455d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4e558728, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5eccd3b9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4d6f197e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6ef7623, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@64e1dd11, org.springframework.test.context.event.EventPublishingTestExecutionListener@5c089b2f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6999cd39, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@14bae047, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7ed9ae94, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@66908383, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@41477a6d, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@2bc12da]
+2020-06-29 11:24:10.287 INFO  [ESlog] [main] [com.example.demo.DemoApplicationTests:55] [] [ ] - Starting DemoApplicationTests using Java 1.8.0_212 on LAPTOP-2FT0MG9F with PID 14540 (started by 41721 in C:\Users\41721\Desktop\ELK\demo)
+2020-06-29 11:24:10.291 INFO  [ESlog] [main] [com.example.demo.DemoApplicationTests:651] [] [ ] - No active profile set, falling back to default profiles: default
+2020-06-29 11:24:11.967 INFO  [ESlog] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] [] [ ] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-29 11:24:12.534 ERROR [ESlog] [main] [com.drools.core.KieTemplate:27] [] [ ] - Please set base path(spring.drools.path = xxx).
+2020-06-29 11:24:12.664 INFO  [ESlog] [main] [com.example.demo.DemoApplicationTests:61] [] [ ] - Started DemoApplicationTests in 2.7 seconds (JVM running for 4.444)
+2020-06-29 11:24:14.125 INFO  [ESlog] [SpringContextShutdownHook] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:218] [] [ ] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-29 11:25:06.987 INFO  [ESlog] [main] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:308] [] [ ] - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.DemoApplicationTests], using SpringBootContextLoader
+2020-06-29 11:25:06.998 INFO  [ESlog] [main] [org.springframework.test.context.support.AbstractContextLoader:264] [] [ ] - Could not detect default resource locations for test class [com.example.demo.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-06-29 11:25:06.998 INFO  [ESlog] [main] [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils:83] [] [ ] - Could not detect default configuration classes for test class [com.example.demo.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-06-29 11:25:07.106 INFO  [ESlog] [main] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:237] [] [ ] - Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.DemoApplicationTests
+2020-06-29 11:25:07.223 INFO  [ESlog] [main] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:248] [] [ ] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-06-29 11:25:07.238 INFO  [ESlog] [main] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:177] [] [ ] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@41e1455d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4e558728, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5eccd3b9, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4d6f197e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6ef7623, org.springframework.test.context.transaction.TransactionalTestExecutionListener@64e1dd11, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5c089b2f, org.springframework.test.context.event.EventPublishingTestExecutionListener@6999cd39, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@14bae047, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7ed9ae94, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@66908383, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@41477a6d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2bc12da, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3122b117]
+2020-06-29 11:25:07.566 INFO  [ESlog] [main] [com.example.demo.DemoApplicationTests:55] [] [ ] - Starting DemoApplicationTests using Java 1.8.0_212 on LAPTOP-2FT0MG9F with PID 12844 (started by 41721 in C:\Users\41721\Desktop\ELK\demo)
+2020-06-29 11:25:07.571 INFO  [ESlog] [main] [com.example.demo.DemoApplicationTests:651] [] [ ] - No active profile set, falling back to default profiles: default
+2020-06-29 11:25:08.834 INFO  [ESlog] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] [] [ ] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-29 11:25:09.197 ERROR [ESlog] [main] [com.drools.core.KieTemplate:27] [] [ ] - Please set base path(spring.drools.path = xxx).
+2020-06-29 11:25:09.291 INFO  [ESlog] [main] [com.example.demo.DemoApplicationTests:61] [] [ ] - Started DemoApplicationTests in 2.019 seconds (JVM running for 3.664)
+2020-06-29 11:25:10.512 INFO  [ESlog] [SpringContextShutdownHook] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:218] [] [ ] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-29 11:26:32.682 INFO  [ESlog] [main] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:308] [] [ ] - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.DemoApplicationTests], using SpringBootContextLoader
+2020-06-29 11:26:32.689 INFO  [ESlog] [main] [org.springframework.test.context.support.AbstractContextLoader:264] [] [ ] - Could not detect default resource locations for test class [com.example.demo.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-06-29 11:26:32.690 INFO  [ESlog] [main] [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils:83] [] [ ] - Could not detect default configuration classes for test class [com.example.demo.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-06-29 11:26:32.794 INFO  [ESlog] [main] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:237] [] [ ] - Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.DemoApplicationTests
+2020-06-29 11:26:32.911 INFO  [ESlog] [main] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:248] [] [ ] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-06-29 11:26:32.928 INFO  [ESlog] [main] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:177] [] [ ] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@41e1455d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4e558728, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5eccd3b9, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4d6f197e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6ef7623, org.springframework.test.context.transaction.TransactionalTestExecutionListener@64e1dd11, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5c089b2f, org.springframework.test.context.event.EventPublishingTestExecutionListener@6999cd39, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@14bae047, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7ed9ae94, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@66908383, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@41477a6d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2bc12da, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3122b117]
+2020-06-29 11:26:33.256 INFO  [ESlog] [main] [com.example.demo.DemoApplicationTests:55] [] [ ] - Starting DemoApplicationTests using Java 1.8.0_212 on LAPTOP-2FT0MG9F with PID 1632 (started by 41721 in C:\Users\41721\Desktop\ELK\demo)
+2020-06-29 11:26:33.260 INFO  [ESlog] [main] [com.example.demo.DemoApplicationTests:651] [] [ ] - No active profile set, falling back to default profiles: default
+2020-06-29 11:26:34.512 INFO  [ESlog] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] [] [ ] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-29 11:26:34.896 ERROR [ESlog] [main] [com.drools.core.KieTemplate:27] [] [ ] - Please set base path(spring.drools.path = xxx).
+2020-06-29 11:26:34.977 INFO  [ESlog] [main] [com.example.demo.DemoApplicationTests:61] [] [ ] - Started DemoApplicationTests in 2.015 seconds (JVM running for 3.741)
+2020-06-29 11:26:36.200 INFO  [ESlog] [SpringContextShutdownHook] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:218] [] [ ] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-29 11:30:19.111 INFO  [ESlog] [main] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:308] [] [ ] - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.DemoApplicationTests], using SpringBootContextLoader
+2020-06-29 11:30:19.120 INFO  [ESlog] [main] [org.springframework.test.context.support.AbstractContextLoader:264] [] [ ] - Could not detect default resource locations for test class [com.example.demo.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-06-29 11:30:19.121 INFO  [ESlog] [main] [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils:83] [] [ ] - Could not detect default configuration classes for test class [com.example.demo.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-06-29 11:30:19.264 INFO  [ESlog] [main] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:237] [] [ ] - Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.DemoApplicationTests
+2020-06-29 11:30:19.465 INFO  [ESlog] [main] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:248] [] [ ] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-06-29 11:30:19.487 INFO  [ESlog] [main] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:177] [] [ ] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@41e1455d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4e558728, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5eccd3b9, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4d6f197e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6ef7623, org.springframework.test.context.transaction.TransactionalTestExecutionListener@64e1dd11, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5c089b2f, org.springframework.test.context.event.EventPublishingTestExecutionListener@6999cd39, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@14bae047, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7ed9ae94, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@66908383, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@41477a6d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2bc12da, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3122b117]
+2020-06-29 11:30:20.018 INFO  [ESlog] [main] [com.example.demo.DemoApplicationTests:55] [] [ ] - Starting DemoApplicationTests using Java 1.8.0_212 on LAPTOP-2FT0MG9F with PID 25156 (started by 41721 in C:\Users\41721\Desktop\ELK\demo)
+2020-06-29 11:30:20.021 INFO  [ESlog] [main] [com.example.demo.DemoApplicationTests:651] [] [ ] - No active profile set, falling back to default profiles: default
+2020-06-29 11:30:21.363 INFO  [ESlog] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] [] [ ] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-29 11:30:21.697 INFO  [ESlog] [main] [com.example.demo.DemoApplicationTests:61] [] [ ] - Started DemoApplicationTests in 2.168 seconds (JVM running for 3.807)
+2020-06-29 11:30:23.012 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:105] [] [ ] - Loading kie.conf from  jar:file:/I:/%e5%b7%a5%e4%bd%9c%e7%9b%b8%e5%85%b3%e6%96%87%e4%bb%b6/work_tools/work_maven/org/jbpm/jbpm-flow/7.22.0.Final/jbpm-flow-7.22.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+2020-06-29 11:30:23.029 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service org.jbpm.marshalling.impl.ProcessMarshallerFactoryServiceImpl
+
+2020-06-29 11:30:23.051 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service org.jbpm.process.instance.ProcessRuntimeFactoryServiceImpl
+
+2020-06-29 11:30:23.051 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:105] [] [ ] - Loading kie.conf from  jar:file:/I:/%e5%b7%a5%e4%bd%9c%e7%9b%b8%e5%85%b3%e6%96%87%e4%bb%b6/work_tools/work_maven/org/kie/kie-dmn-core/7.22.0.Final/kie-dmn-core-7.22.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+2020-06-29 11:30:23.076 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service +org.kie.dmn.core.assembler.DMNAssemblerService
+
+2020-06-29 11:30:23.098 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service +org.kie.dmn.core.runtime.DMNRuntimeService
+
+2020-06-29 11:30:23.099 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service +org.kie.dmn.core.weaver.DMNWeaverService
+
+2020-06-29 11:30:23.099 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:105] [] [ ] - Loading kie.conf from  jar:file:/I:/%e5%b7%a5%e4%bd%9c%e7%9b%b8%e5%85%b3%e6%96%87%e4%bb%b6/work_tools/work_maven/org/drools/drools-model-compiler/7.22.0.Final/drools-model-compiler-7.22.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+2020-06-29 11:30:23.115 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service org.drools.modelcompiler.CanonicalKieModuleProvider
+
+2020-06-29 11:30:23.115 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:105] [] [ ] - Loading kie.conf from  jar:file:/I:/%e5%b7%a5%e4%bd%9c%e7%9b%b8%e5%85%b3%e6%96%87%e4%bb%b6/work_tools/work_maven/org/kie/kie-internal/7.22.0.Final/kie-internal-7.22.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+2020-06-29 11:30:23.116 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service org.kie.internal.services.KieAssemblersImpl
+
+2020-06-29 11:30:23.117 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service org.kie.internal.services.KieRuntimesImpl
+
+2020-06-29 11:30:23.118 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service org.kie.internal.services.KieWeaversImpl
+
+2020-06-29 11:30:23.119 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service org.kie.internal.services.KieBeliefsImpl
+
+2020-06-29 11:30:23.120 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:105] [] [ ] - Loading kie.conf from  jar:file:/I:/%e5%b7%a5%e4%bd%9c%e7%9b%b8%e5%85%b3%e6%96%87%e4%bb%b6/work_tools/work_maven/org/drools/drools-core/7.22.0.Final/drools-core-7.22.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+2020-06-29 11:30:23.121 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service org.drools.core.io.impl.ResourceFactoryServiceImpl
+
+2020-06-29 11:30:23.123 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service org.drools.core.marshalling.impl.MarshallerProviderImpl
+
+2020-06-29 11:30:23.125 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service org.drools.core.concurrent.ExecutorProviderImpl
+
+2020-06-29 11:30:23.126 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:105] [] [ ] - Loading kie.conf from  jar:file:/I:/%e5%b7%a5%e4%bd%9c%e7%9b%b8%e5%85%b3%e6%96%87%e4%bb%b6/work_tools/work_maven/org/drools/drools-decisiontables/7.22.0.Final/drools-decisiontables-7.22.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+2020-06-29 11:30:23.131 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service org.drools.decisiontable.DecisionTableProviderImpl
+
+2020-06-29 11:30:23.131 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:105] [] [ ] - Loading kie.conf from  jar:file:/I:/%e5%b7%a5%e4%bd%9c%e7%9b%b8%e5%85%b3%e6%96%87%e4%bb%b6/work_tools/work_maven/org/drools/drools-compiler/7.22.0.Final/drools-compiler-7.22.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+2020-06-29 11:30:23.153 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service org.drools.compiler.kie.builder.impl.KieServicesImpl
+
+2020-06-29 11:30:23.157 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service org.drools.compiler.builder.impl.KnowledgeBuilderFactoryServiceImpl
+
+2020-06-29 11:30:23.471 WARN  [ESlog] [main] [org.drools.compiler.kie.builder.impl.KieBuilderImpl:390] [] [ ] - File 'src/main/resources/file0.drl' is in folder 'src/main/resources' but declares package 'rules'. It is advised to have a correspondance between package and folder names.
+2020-06-29 11:30:23.887 WARN  [ESlog] [main] [org.drools.compiler.kie.builder.impl.KieBuilderImpl:390] [] [ ] - File 'file0.drl' is in folder '' but declares package 'rules'. It is advised to have a correspondance between package and folder names.
+2020-06-29 11:30:24.846 INFO  [ESlog] [main] [org.drools.compiler.kie.builder.impl.KieRepositoryImpl:111] [] [ ] - KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0]
+2020-06-29 11:30:24.889 WARN  [ESlog] [main] [org.drools.compiler.kie.builder.impl.KieBuilderImpl:390] [] [ ] - File 'src/main/resources/file0.drl' is in folder 'src/main/resources' but declares package 'rules'. It is advised to have a correspondance between package and folder names.
+2020-06-29 11:30:24.890 WARN  [ESlog] [main] [org.drools.compiler.kie.builder.impl.KieBuilderImpl:390] [] [ ] - File 'file0.drl' is in folder '' but declares package 'rules'. It is advised to have a correspondance between package and folder names.
+2020-06-29 11:30:24.917 INFO  [ESlog] [main] [org.drools.compiler.kie.builder.impl.KieRepositoryImpl:111] [] [ ] - KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0]
+2020-06-29 11:30:25.377 INFO  [ESlog] [SpringContextShutdownHook] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:218] [] [ ] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-29 11:30:45.764 INFO  [ESlog] [main] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:308] [] [ ] - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.DemoApplicationTests], using SpringBootContextLoader
+2020-06-29 11:30:45.776 INFO  [ESlog] [main] [org.springframework.test.context.support.AbstractContextLoader:264] [] [ ] - Could not detect default resource locations for test class [com.example.demo.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-06-29 11:30:45.777 INFO  [ESlog] [main] [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils:83] [] [ ] - Could not detect default configuration classes for test class [com.example.demo.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-06-29 11:30:45.912 INFO  [ESlog] [main] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:237] [] [ ] - Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.DemoApplicationTests
+2020-06-29 11:30:46.054 INFO  [ESlog] [main] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:248] [] [ ] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-06-29 11:30:46.078 INFO  [ESlog] [main] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:177] [] [ ] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@41e1455d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4e558728, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5eccd3b9, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4d6f197e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6ef7623, org.springframework.test.context.transaction.TransactionalTestExecutionListener@64e1dd11, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5c089b2f, org.springframework.test.context.event.EventPublishingTestExecutionListener@6999cd39, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@14bae047, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7ed9ae94, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@66908383, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@41477a6d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2bc12da, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3122b117]
+2020-06-29 11:30:46.626 INFO  [ESlog] [main] [com.example.demo.DemoApplicationTests:55] [] [ ] - Starting DemoApplicationTests using Java 1.8.0_212 on LAPTOP-2FT0MG9F with PID 8408 (started by 41721 in C:\Users\41721\Desktop\ELK\demo)
+2020-06-29 11:30:46.630 INFO  [ESlog] [main] [com.example.demo.DemoApplicationTests:651] [] [ ] - No active profile set, falling back to default profiles: default
+2020-06-29 11:30:48.400 INFO  [ESlog] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] [] [ ] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-29 11:30:48.861 INFO  [ESlog] [main] [com.example.demo.DemoApplicationTests:61] [] [ ] - Started DemoApplicationTests in 2.735 seconds (JVM running for 4.951)
+2020-06-29 11:30:50.154 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:105] [] [ ] - Loading kie.conf from  jar:file:/I:/%e5%b7%a5%e4%bd%9c%e7%9b%b8%e5%85%b3%e6%96%87%e4%bb%b6/work_tools/work_maven/org/jbpm/jbpm-flow/7.22.0.Final/jbpm-flow-7.22.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+2020-06-29 11:30:50.157 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service org.jbpm.marshalling.impl.ProcessMarshallerFactoryServiceImpl
+
+2020-06-29 11:30:50.158 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service org.jbpm.process.instance.ProcessRuntimeFactoryServiceImpl
+
+2020-06-29 11:30:50.159 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:105] [] [ ] - Loading kie.conf from  jar:file:/I:/%e5%b7%a5%e4%bd%9c%e7%9b%b8%e5%85%b3%e6%96%87%e4%bb%b6/work_tools/work_maven/org/kie/kie-dmn-core/7.22.0.Final/kie-dmn-core-7.22.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+2020-06-29 11:30:50.162 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service +org.kie.dmn.core.assembler.DMNAssemblerService
+
+2020-06-29 11:30:50.163 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service +org.kie.dmn.core.runtime.DMNRuntimeService
+
+2020-06-29 11:30:50.164 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service +org.kie.dmn.core.weaver.DMNWeaverService
+
+2020-06-29 11:30:50.164 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:105] [] [ ] - Loading kie.conf from  jar:file:/I:/%e5%b7%a5%e4%bd%9c%e7%9b%b8%e5%85%b3%e6%96%87%e4%bb%b6/work_tools/work_maven/org/drools/drools-model-compiler/7.22.0.Final/drools-model-compiler-7.22.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+2020-06-29 11:30:50.166 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service org.drools.modelcompiler.CanonicalKieModuleProvider
+
+2020-06-29 11:30:50.166 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:105] [] [ ] - Loading kie.conf from  jar:file:/I:/%e5%b7%a5%e4%bd%9c%e7%9b%b8%e5%85%b3%e6%96%87%e4%bb%b6/work_tools/work_maven/org/kie/kie-internal/7.22.0.Final/kie-internal-7.22.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+2020-06-29 11:30:50.167 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service org.kie.internal.services.KieAssemblersImpl
+
+2020-06-29 11:30:50.168 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service org.kie.internal.services.KieRuntimesImpl
+
+2020-06-29 11:30:50.168 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service org.kie.internal.services.KieWeaversImpl
+
+2020-06-29 11:30:50.169 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service org.kie.internal.services.KieBeliefsImpl
+
+2020-06-29 11:30:50.169 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:105] [] [ ] - Loading kie.conf from  jar:file:/I:/%e5%b7%a5%e4%bd%9c%e7%9b%b8%e5%85%b3%e6%96%87%e4%bb%b6/work_tools/work_maven/org/drools/drools-core/7.22.0.Final/drools-core-7.22.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+2020-06-29 11:30:50.170 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service org.drools.core.io.impl.ResourceFactoryServiceImpl
+
+2020-06-29 11:30:50.171 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service org.drools.core.marshalling.impl.MarshallerProviderImpl
+
+2020-06-29 11:30:50.172 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service org.drools.core.concurrent.ExecutorProviderImpl
+
+2020-06-29 11:30:50.172 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:105] [] [ ] - Loading kie.conf from  jar:file:/I:/%e5%b7%a5%e4%bd%9c%e7%9b%b8%e5%85%b3%e6%96%87%e4%bb%b6/work_tools/work_maven/org/drools/drools-decisiontables/7.22.0.Final/drools-decisiontables-7.22.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+2020-06-29 11:30:50.174 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service org.drools.decisiontable.DecisionTableProviderImpl
+
+2020-06-29 11:30:50.174 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:105] [] [ ] - Loading kie.conf from  jar:file:/I:/%e5%b7%a5%e4%bd%9c%e7%9b%b8%e5%85%b3%e6%96%87%e4%bb%b6/work_tools/work_maven/org/drools/drools-compiler/7.22.0.Final/drools-compiler-7.22.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+2020-06-29 11:30:50.178 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service org.drools.compiler.kie.builder.impl.KieServicesImpl
+
+2020-06-29 11:30:50.181 INFO  [ESlog] [main] [org.kie.api.internal.utils.ServiceDiscoveryImpl:139] [] [ ] - Adding Service org.drools.compiler.builder.impl.KnowledgeBuilderFactoryServiceImpl
+
+2020-06-29 11:30:50.330 WARN  [ESlog] [main] [org.drools.compiler.kie.builder.impl.KieBuilderImpl:390] [] [ ] - File 'src/main/resources/file0.drl' is in folder 'src/main/resources' but declares package 'rules'. It is advised to have a correspondance between package and folder names.
+2020-06-29 11:30:50.507 WARN  [ESlog] [main] [org.drools.compiler.kie.builder.impl.KieBuilderImpl:390] [] [ ] - File 'file0.drl' is in folder '' but declares package 'rules'. It is advised to have a correspondance between package and folder names.
+2020-06-29 11:30:51.273 INFO  [ESlog] [main] [org.drools.compiler.kie.builder.impl.KieRepositoryImpl:111] [] [ ] - KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0]
+2020-06-29 11:30:51.302 WARN  [ESlog] [main] [org.drools.compiler.kie.builder.impl.KieBuilderImpl:390] [] [ ] - File 'src/main/resources/file0.drl' is in folder 'src/main/resources' but declares package 'rules'. It is advised to have a correspondance between package and folder names.
+2020-06-29 11:30:51.304 WARN  [ESlog] [main] [org.drools.compiler.kie.builder.impl.KieBuilderImpl:390] [] [ ] - File 'file0.drl' is in folder '' but declares package 'rules'. It is advised to have a correspondance between package and folder names.
+2020-06-29 11:30:51.334 INFO  [ESlog] [main] [org.drools.compiler.kie.builder.impl.KieRepositoryImpl:111] [] [ ] - KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0]
+2020-06-29 11:30:51.654 INFO  [ESlog] [SpringContextShutdownHook] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:218] [] [ ] - Shutting down ExecutorService 'applicationTaskExecutor'
