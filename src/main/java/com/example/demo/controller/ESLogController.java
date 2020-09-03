@@ -8,6 +8,7 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -27,4 +28,10 @@ public class ESLogController {
         log.info(equipment_code+"controller打印信息哈哈哈");
         return ResponseEntity.ok(esLogService.getTest(equipment_code));
     }
+    @GetMapping("/testex/{equipment_code}")
+    public ResponseEntity testex(@PathVariable String equipment_code){
+        log.info(equipment_code+"controller打印信息哈哈哈");
+        return ResponseEntity.ok(esLogService.getEx(equipment_code));
+    }
+
 }

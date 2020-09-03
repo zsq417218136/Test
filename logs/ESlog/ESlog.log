@@ -392,3 +392,40 @@ Correct the classpath of your application so that it contains a single, compatib
 2020-06-29 11:30:51.304 WARN  [ESlog] [main] [org.drools.compiler.kie.builder.impl.KieBuilderImpl:390] [] [ ] - File 'file0.drl' is in folder '' but declares package 'rules'. It is advised to have a correspondance between package and folder names.
 2020-06-29 11:30:51.334 INFO  [ESlog] [main] [org.drools.compiler.kie.builder.impl.KieRepositoryImpl:111] [] [ ] - KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0]
 2020-06-29 11:30:51.654 INFO  [ESlog] [SpringContextShutdownHook] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:218] [] [ ] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-03 16:35:14.538 INFO  [ESlog] [main] [com.example.demo.DemoApplication:55] [] [ ] - Starting DemoApplication using Java 1.8.0_212 on LAPTOP-2FT0MG9F with PID 33868 (C:\Users\41721\Desktop\ELK\demo\target\classes started by 41721 in C:\Users\41721\Desktop\ELK\demo)
+2020-09-03 16:35:14.560 INFO  [ESlog] [main] [com.example.demo.DemoApplication:651] [] [ ] - No active profile set, falling back to default profiles: default
+2020-09-03 16:35:16.144 INFO  [ESlog] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] [] [ ] - Tomcat initialized with port(s): 8012 (http)
+2020-09-03 16:35:16.176 INFO  [ESlog] [main] [org.apache.coyote.http11.Http11NioProtocol:173] [] [ ] - Initializing ProtocolHandler ["http-nio-8012"]
+2020-09-03 16:35:16.177 INFO  [ESlog] [main] [org.apache.catalina.core.StandardService:173] [] [ ] - Starting service [Tomcat]
+2020-09-03 16:35:16.177 INFO  [ESlog] [main] [org.apache.catalina.core.StandardEngine:173] [] [ ] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-09-03 16:35:16.334 INFO  [ESlog] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] [] [ ] - Initializing Spring embedded WebApplicationContext
+2020-09-03 16:35:16.334 INFO  [ESlog] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] [] [ ] - Root WebApplicationContext: initialization completed in 1701 ms
+2020-09-03 16:35:16.561 INFO  [ESlog] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] [] [ ] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-03 16:35:16.789 INFO  [ESlog] [main] [org.apache.coyote.http11.Http11NioProtocol:173] [] [ ] - Starting ProtocolHandler ["http-nio-8012"]
+2020-09-03 16:35:16.835 INFO  [ESlog] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] [] [ ] - Tomcat started on port(s): 8012 (http) with context path ''
+2020-09-03 16:35:16.847 INFO  [ESlog] [main] [com.example.demo.DemoApplication:61] [] [ ] - Started DemoApplication in 3.412 seconds (JVM running for 6.792)
+2020-09-03 16:37:04.248 INFO  [ESlog] [http-nio-8012-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] [] [ ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-03 16:37:04.248 INFO  [ESlog] [http-nio-8012-exec-1] [org.springframework.web.servlet.DispatcherServlet:525] [] [ ] - Initializing Servlet 'dispatcherServlet'
+2020-09-03 16:37:04.249 INFO  [ESlog] [http-nio-8012-exec-1] [org.springframework.web.servlet.DispatcherServlet:547] [] [ ] - Completed initialization in 1 ms
+2020-09-03 16:37:04.482 INFO  [ESlog] [http-nio-8012-exec-1] [com.example.demo.filter.ParameterFilter:64] [af430a924261] [ ] - Request : /commmon/testex > Source IP : 0:0:0:0:0:0:0:1 > Parameters : {} 
+2020-09-03 16:37:04.562 INFO  [ESlog] [http-nio-8012-exec-1] [com.example.demo.controller.ESLogController:32] [af430a924261] [ ] - nullcontroller打印信息哈哈哈
+2020-09-03 16:37:04.698 INFO  [ESlog] [http-nio-8012-exec-3] [com.example.demo.filter.ParameterFilter:64] [004b3ef24697] [ ] - Request : /favicon.ico > Source IP : 0:0:0:0:0:0:0:1 > Parameters : {} 
+2020-09-03 16:49:48.517 INFO  [ESlog] [http-nio-8012-exec-5] [com.example.demo.filter.ParameterFilter:64] [a62894e88490] [ ] - Request : /commmon/testex/1233221 > Source IP : 0:0:0:0:0:0:0:1 > Parameters : {} 
+2020-09-03 16:50:21.970 INFO  [ESlog] [SpringContextShutdownHook] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:218] [] [ ] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-03 16:50:37.777 INFO  [ESlog] [main] [com.example.demo.DemoApplication:55] [] [ ] - Starting DemoApplication using Java 1.8.0_212 on LAPTOP-2FT0MG9F with PID 40168 (C:\Users\41721\Desktop\ELK\demo\target\classes started by 41721 in C:\Users\41721\Desktop\ELK\demo)
+2020-09-03 16:50:37.789 INFO  [ESlog] [main] [com.example.demo.DemoApplication:651] [] [ ] - No active profile set, falling back to default profiles: default
+2020-09-03 16:50:39.088 INFO  [ESlog] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] [] [ ] - Tomcat initialized with port(s): 8012 (http)
+2020-09-03 16:50:39.133 INFO  [ESlog] [main] [org.apache.coyote.http11.Http11NioProtocol:173] [] [ ] - Initializing ProtocolHandler ["http-nio-8012"]
+2020-09-03 16:50:39.134 INFO  [ESlog] [main] [org.apache.catalina.core.StandardService:173] [] [ ] - Starting service [Tomcat]
+2020-09-03 16:50:39.134 INFO  [ESlog] [main] [org.apache.catalina.core.StandardEngine:173] [] [ ] - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-09-03 16:50:39.275 INFO  [ESlog] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] [] [ ] - Initializing Spring embedded WebApplicationContext
+2020-09-03 16:50:39.275 INFO  [ESlog] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] [] [ ] - Root WebApplicationContext: initialization completed in 1406 ms
+2020-09-03 16:50:39.483 INFO  [ESlog] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] [] [ ] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-03 16:50:39.689 INFO  [ESlog] [main] [org.apache.coyote.http11.Http11NioProtocol:173] [] [ ] - Starting ProtocolHandler ["http-nio-8012"]
+2020-09-03 16:50:39.714 INFO  [ESlog] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] [] [ ] - Tomcat started on port(s): 8012 (http) with context path ''
+2020-09-03 16:50:39.737 INFO  [ESlog] [main] [com.example.demo.DemoApplication:61] [] [ ] - Started DemoApplication in 3.719 seconds (JVM running for 7.546)
+2020-09-03 16:51:25.276 INFO  [ESlog] [http-nio-8012-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] [] [ ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-03 16:51:25.276 INFO  [ESlog] [http-nio-8012-exec-1] [org.springframework.web.servlet.DispatcherServlet:525] [] [ ] - Initializing Servlet 'dispatcherServlet'
+2020-09-03 16:51:25.276 INFO  [ESlog] [http-nio-8012-exec-1] [org.springframework.web.servlet.DispatcherServlet:547] [] [ ] - Completed initialization in 0 ms
+2020-09-03 16:51:25.550 INFO  [ESlog] [http-nio-8012-exec-1] [com.example.demo.filter.ParameterFilter:64] [0cfa85e85284] [ ] - Request : /commmon/testex/uiouoi > Source IP : 0:0:0:0:0:0:0:1 > Parameters : {} 
+2020-09-03 16:51:25.591 INFO  [ESlog] [http-nio-8012-exec-1] [com.example.demo.controller.ESLogController:33] [0cfa85e85284] [ ] - uiouoicontroller打印信息哈哈哈
