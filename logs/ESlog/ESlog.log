@@ -429,3 +429,44 @@ Correct the classpath of your application so that it contains a single, compatib
 2020-09-03 16:51:25.276 INFO  [ESlog] [http-nio-8012-exec-1] [org.springframework.web.servlet.DispatcherServlet:547] [] [ ] - Completed initialization in 0 ms
 2020-09-03 16:51:25.550 INFO  [ESlog] [http-nio-8012-exec-1] [com.example.demo.filter.ParameterFilter:64] [0cfa85e85284] [ ] - Request : /commmon/testex/uiouoi > Source IP : 0:0:0:0:0:0:0:1 > Parameters : {} 
 2020-09-03 16:51:25.591 INFO  [ESlog] [http-nio-8012-exec-1] [com.example.demo.controller.ESLogController:33] [0cfa85e85284] [ ] - uiouoicontroller打印信息哈哈哈
+2020-09-23 16:41:54.682 INFO  [ESlog] [main] [com.example.demo.DemoApplication:55] [] [ ] - Starting DemoApplication using Java 1.8.0_212 on LAPTOP-2FT0MG9F with PID 11476 (C:\Users\41721\Desktop\ELK\demo\target\classes started by 41721 in C:\Users\41721\Desktop\ELK\demo)
+2020-09-23 16:41:54.698 INFO  [ESlog] [main] [com.example.demo.DemoApplication:652] [] [ ] - No active profile set, falling back to default profiles: default
+2020-09-23 16:41:56.784 INFO  [ESlog] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] [] [ ] - Tomcat initialized with port(s): 8012 (http)
+2020-09-23 16:41:56.799 INFO  [ESlog] [main] [org.apache.coyote.http11.Http11NioProtocol:173] [] [ ] - Initializing ProtocolHandler ["http-nio-8012"]
+2020-09-23 16:41:56.799 INFO  [ESlog] [main] [org.apache.catalina.core.StandardService:173] [] [ ] - Starting service [Tomcat]
+2020-09-23 16:41:56.800 INFO  [ESlog] [main] [org.apache.catalina.core.StandardEngine:173] [] [ ] - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-23 16:41:56.952 INFO  [ESlog] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] [] [ ] - Initializing Spring embedded WebApplicationContext
+2020-09-23 16:41:56.952 INFO  [ESlog] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289] [] [ ] - Root WebApplicationContext: initialization completed in 2186 ms
+2020-09-23 16:41:57.820 INFO  [ESlog] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] [] [ ] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 16:41:58.053 INFO  [ESlog] [main] [org.apache.coyote.http11.Http11NioProtocol:173] [] [ ] - Starting ProtocolHandler ["http-nio-8012"]
+2020-09-23 16:41:58.085 INFO  [ESlog] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] [] [ ] - Tomcat started on port(s): 8012 (http) with context path ''
+2020-09-23 16:41:58.467 INFO  [ESlog] [main] [com.example.demo.DemoApplication:61] [] [ ] - Started DemoApplication in 4.687 seconds (JVM running for 8.833)
+2020-09-23 17:05:42.842 INFO  [ESlog] [SpringContextShutdownHook] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:218] [] [ ] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-23 17:17:02.899 INFO  [ESlog] [main] [com.example.demo.DemoApplication:55] [] [ ] - Starting DemoApplication using Java 1.8.0_212 on LAPTOP-2FT0MG9F with PID 13480 (C:\Users\41721\Desktop\ELK\demo\target\classes started by 41721 in C:\Users\41721\Desktop\ELK\demo)
+2020-09-23 17:17:02.913 INFO  [ESlog] [main] [com.example.demo.DemoApplication:663] [] [ ] - No active profile set, falling back to default profiles: default
+2020-09-23 17:17:05.252 INFO  [ESlog] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] [] [ ] - Tomcat initialized with port(s): 8012 (http)
+2020-09-23 17:17:05.267 INFO  [ESlog] [main] [org.apache.coyote.http11.Http11NioProtocol:173] [] [ ] - Initializing ProtocolHandler ["http-nio-8012"]
+2020-09-23 17:17:05.267 INFO  [ESlog] [main] [org.apache.catalina.core.StandardService:173] [] [ ] - Starting service [Tomcat]
+2020-09-23 17:17:05.268 INFO  [ESlog] [main] [org.apache.catalina.core.StandardEngine:173] [] [ ] - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-09-23 17:17:05.460 INFO  [ESlog] [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] [] [ ] - Initializing Spring embedded WebApplicationContext
+2020-09-23 17:17:05.460 INFO  [ESlog] [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289] [] [ ] - Root WebApplicationContext: initialization completed in 2469 ms
+2020-09-23 17:17:08.867 INFO  [ESlog] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] [] [ ] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 17:17:09.126 INFO  [ESlog] [main] [org.apache.coyote.http11.Http11NioProtocol:173] [] [ ] - Starting ProtocolHandler ["http-nio-8012"]
+2020-09-23 17:17:09.143 INFO  [ESlog] [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] [] [ ] - Tomcat started on port(s): 8012 (http) with context path ''
+2020-09-23 17:17:09.528 INFO  [ESlog] [main] [com.example.demo.DemoApplication:61] [] [ ] - Started DemoApplication in 8.033 seconds (JVM running for 11.852)
+2020-09-23 17:19:01.667 INFO  [ESlog] [http-nio-8012-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] [] [ ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-23 17:19:01.667 INFO  [ESlog] [http-nio-8012-exec-1] [org.springframework.web.servlet.DispatcherServlet:525] [] [ ] - Initializing Servlet 'dispatcherServlet'
+2020-09-23 17:19:01.667 INFO  [ESlog] [http-nio-8012-exec-1] [org.springframework.web.servlet.DispatcherServlet:547] [] [ ] - Completed initialization in 0 ms
+2020-09-23 17:19:01.740 INFO  [ESlog] [http-nio-8012-exec-1] [com.example.demo.filter.ParameterFilter:64] [dd5f19e41693] [ ] - Request : /swagger-ui.html > Source IP : 0:0:0:0:0:0:0:1 > Parameters : {} 
+2020-09-23 17:19:01.965 INFO  [ESlog] [http-nio-8012-exec-3] [com.example.demo.filter.ParameterFilter:64] [48e74ba41965] [ ] - Request : /favicon.ico > Source IP : 0:0:0:0:0:0:0:1 > Parameters : {} 
+2020-09-23 17:20:09.239 INFO  [ESlog] [http-nio-8012-exec-6] [com.example.demo.filter.ParameterFilter:64] [6abb1b79238] [ ] - Request : /text/rocketmq > Source IP : 0:0:0:0:0:0:0:1 > Parameters : {} 
+2020-09-23 17:20:09.717 INFO  [ESlog] [http-nio-8012-exec-6] [com.example.demo.rocketmq.Controller:47] [6abb1b79238] [ ] - 输出生产者信息=SendResult [sendStatus=SEND_OK, msgId=0A08085134A818B4AAC2750433610000, offsetMsgId=6584988D00002A9F0000000000000000, messageQueue=MessageQueue [topic=topic_family, brokerName=broker-a, queueId=2], queueOffset=0]
+2020-09-23 17:20:09.753 INFO  [ESlog] [http-nio-8012-exec-6] [com.example.demo.rocketmq.Controller:47] [6abb1b79238] [ ] - 输出生产者信息=SendResult [sendStatus=SEND_OK, msgId=0A08085134A818B4AAC2750433F50001, offsetMsgId=6584988D00002A9F00000000000000C7, messageQueue=MessageQueue [topic=topic_family, brokerName=broker-a, queueId=3], queueOffset=0]
+2020-09-23 17:20:09.784 INFO  [ESlog] [http-nio-8012-exec-6] [com.example.demo.rocketmq.Controller:47] [6abb1b79238] [ ] - 输出生产者信息=SendResult [sendStatus=SEND_OK, msgId=0A08085134A818B4AAC2750434190002, offsetMsgId=6584988D00002A9F000000000000018E, messageQueue=MessageQueue [topic=topic_family, brokerName=broker-a, queueId=0], queueOffset=0]
+2020-09-23 17:20:09.815 INFO  [ESlog] [http-nio-8012-exec-6] [com.example.demo.rocketmq.Controller:47] [6abb1b79238] [ ] - 输出生产者信息=SendResult [sendStatus=SEND_OK, msgId=0A08085134A818B4AAC2750434380003, offsetMsgId=6584988D00002A9F0000000000000255, messageQueue=MessageQueue [topic=topic_family, brokerName=broker-a, queueId=1], queueOffset=0]
+2020-09-23 17:20:09.847 INFO  [ESlog] [http-nio-8012-exec-6] [com.example.demo.rocketmq.Controller:47] [6abb1b79238] [ ] - 输出生产者信息=SendResult [sendStatus=SEND_OK, msgId=0A08085134A818B4AAC2750434570004, offsetMsgId=6584988D00002A9F000000000000031C, messageQueue=MessageQueue [topic=topic_family, brokerName=broker-a, queueId=2], queueOffset=1]
+2020-09-23 17:20:29.424 INFO  [ESlog] [ConsumeMessageThread_1] [com.example.demo.rocketmq.Consumer:50] [] [ ] - Consumer-获取消息-主题topic为=topic_family, 消费消息为=小小一家人的称谓:妈妈
+2020-09-23 17:20:32.454 INFO  [ESlog] [ConsumeMessageThread_4] [com.example.demo.rocketmq.Consumer:50] [] [ ] - Consumer-获取消息-主题topic为=topic_family, 消费消息为=小小一家人的称谓:爷爷
+2020-09-23 17:20:32.454 INFO  [ESlog] [ConsumeMessageThread_5] [com.example.demo.rocketmq.Consumer:50] [] [ ] - Consumer-获取消息-主题topic为=topic_family, 消费消息为=小小一家人的称谓:奶奶
+2020-09-23 17:20:32.454 INFO  [ESlog] [ConsumeMessageThread_3] [com.example.demo.rocketmq.Consumer:50] [] [ ] - Consumer-获取消息-主题topic为=topic_family, 消费消息为=小小一家人的称谓:小小
+2020-09-23 17:20:32.454 INFO  [ESlog] [ConsumeMessageThread_2] [com.example.demo.rocketmq.Consumer:50] [] [ ] - Consumer-获取消息-主题topic为=topic_family, 消费消息为=小小一家人的称谓:爸爸
